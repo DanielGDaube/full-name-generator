@@ -9,21 +9,21 @@ public class FullNameApplication {
         System.out.println("Please enter your name.");
 
         System.out.println("First name:");
-        nameScanner(nameScanner);
+        String firstName = nameScanner(nameScanner);
 
         System.out.println("Middle name:");
-        nameScanner(nameScanner);
+        String middleName = nameScanner(nameScanner);
 
         System.out.println("Last name:");
-        nameScanner(nameScanner);
+        String lastNmae = nameScanner(nameScanner);
 
         System.out.println("Suffix:");
-        nameScanner(nameScanner);
+        String suffix = nameScanner(nameScanner);
 
 
         nameScanner.close();
     }
-    public static void nameScanner(Scanner nameScanner){
-        nameScanner.nextLine();
+    public static String nameScanner(Scanner nameScanner){
+        return nameScanner.nextLine().trim();
     }
 }
